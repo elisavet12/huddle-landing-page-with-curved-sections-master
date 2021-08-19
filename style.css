@@ -104,8 +104,57 @@ main {
 }
 
 .stats {
-  padding: 0px 160px;
+  padding: 0px 210px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.stat-image {
+  width: auto;
+  max-width: 100%;
+}
+
+.stat-title {
+  font-size: 72px;
+  font-weight: 600;
+  color: var(--Very-Dark-Cyan);
+  margin: 0px;
+}
+
+.stat-excerpt {
+  font-size: 18px;
+  color: var(--Very-Dark-Cyan);
+  font-weight: 400;
+  opacity: 0.7;
+  margin: 0px;
+}
+
+.properties {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.property {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.property-info {
+}
+
+.property-title {
+  font-family: "Poppins";
+  font-size: ;
+  font-weight: ;
+  color: ;
+}
+
+.property-excerpt {
+  font-size: ;
+}
+
+.image {
+  width: auto;
+  max-width: 100%;
 }
