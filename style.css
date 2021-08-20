@@ -13,7 +13,7 @@ body {
   margin: 0px;
   height: 100vh;
   min-height: 100%;
-  background-color: var(--Very-Pale-Blue);
+  background-color: white;
 }
 
 header {
@@ -49,6 +49,8 @@ header {
 }
 
 main {
+  background-image: url(./images/bg-section-top-desktop-1.svg);
+  background-image: url(./images/bg-section-bottom-desktop-1.svg);
 }
 
 .information {
@@ -135,6 +137,11 @@ main {
   display: grid;
   grid-template-rows: 1fr;
   padding: 45px 160px 45px 160px;
+  /* background-image: url(./images/bg-section-bottom-desktop-1.svg);
+
+  background-color: aqua;
+  position: relative;
+  background-repeat: no-repeat; */
 }
 
 .property {
@@ -175,6 +182,9 @@ main {
   color: var(--Very-Dark-Cyan);
   font-weight: 700;
   display: inline-block;
+  /* background-image: url(./images/bg-section-top-desktop-1.svg);
+  position: relative;
+  background-repeat: no-repeat; */
 }
 
 .ready-button {
