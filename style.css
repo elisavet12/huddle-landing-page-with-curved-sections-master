@@ -142,11 +142,7 @@ main {
 .properties {
   display: grid;
   grid-template-rows: 1fr;
-  padding: 45px 160px 45px 160px;
-  /* background-image: url(./images/bg-section-bottom-desktop-1.svg);
-
-  background-color: aqua;
-  background-position: 0ch 67em; */
+  /* padding: 45px 160px 45px 160px; */
 }
 
 .property {
@@ -154,6 +150,19 @@ main {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
+}
+
+.prop-one {
+  background-color: var(--Very-Pale-Blue);
+}
+
+.prop-three {
+  background-color: var(--Very-Pale-Blue);
+}
+
+.curve1-desktop {
+  position: relative;
+  bottom: 13%;
 }
 
 .property-info {
@@ -329,6 +338,9 @@ footer {
   .properties {
     padding: 45px 100px 45px 100px;
     text-align: center;
+  }
+
+  .prop {
   }
 
   .property {
