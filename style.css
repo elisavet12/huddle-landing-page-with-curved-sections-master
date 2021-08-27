@@ -113,7 +113,7 @@ main {
 }
 
 .stats {
-  padding: 45px 210px 45px 210px;
+  padding: 45px 210px 200px 210px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -150,19 +150,43 @@ main {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
+  padding: 0px 95px;
 }
 
 .prop-one {
   background-color: var(--Very-Pale-Blue);
+  padding: 50px 0px 84px 0px;
+}
+
+.prop-two {
+  padding: 160px 45px 160px 45px;
 }
 
 .prop-three {
   background-color: var(--Very-Pale-Blue);
 }
 
-.curve1-desktop {
+.curve {
   position: relative;
-  bottom: 13%;
+  max-width: 100%;
+  width: 1440px;
+  text-align: center;
+}
+
+.curve1-top {
+  bottom: 22%;
+}
+
+.curve1-bottom {
+  top: 25%;
+}
+
+.curve2-top {
+  bottom: 18%;
+}
+
+.curve2-bottom {
+  top: 18%;
 }
 
 .property-info {
@@ -191,7 +215,7 @@ main {
 
 .ready {
   text-align: center;
-  padding: 130px 290px 130px 290px;
+  padding: 145px 290px 130px 290px;
   font-family: "Poppins";
   font-size: 30px;
   color: var(--Very-Dark-Cyan);
@@ -219,10 +243,14 @@ main {
   background-color: var(--Light-Pink);
 }
 
+.curve-footerdt {
+  top: 2%;
+}
+
 footer {
   color: white;
   background-color: var(--Very-Dark-Cyan);
-  padding: 0px 90px;
+  padding: 100px 90px 0px 90px;
 }
 
 .footer-container {
@@ -266,6 +294,7 @@ footer {
   display: flex;
   cursor: pointer;
   gap: 20px;
+  padding: 62px 0px;
 }
 
 .social-image {
