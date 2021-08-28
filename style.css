@@ -10,10 +10,12 @@ body {
   font-family: "Open Sans";
   font-size: 16px;
   box-sizing: border-box;
-  margin: 0px;
+  margin: 0px auto;
   height: 100vh;
   min-height: 100%;
   background-color: white;
+  width: 100%;
+  max-width: 1440px;
 }
 
 header {
@@ -46,12 +48,6 @@ header {
 .header-button:hover {
   border: solid 1px var(--Light-Pink);
   color: var(--Light-Pink);
-}
-
-main {
-  /* background-image: url(./images/bg-section-top-desktop-1.svg);
-  background-image: url(./images/bg-section-bottom-desktop-1.svg);
-  background-repeat: space; */
 }
 
 .information {
@@ -114,9 +110,10 @@ main {
 
 .stats {
   padding: 45px 210px 200px 210px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 .stat-image {
@@ -189,9 +186,6 @@ main {
   top: 18%;
 }
 
-.property-info {
-}
-
 .property-title {
   font-family: "Poppins";
   font-size: 30px;
@@ -220,10 +214,6 @@ main {
   font-size: 30px;
   color: var(--Very-Dark-Cyan);
   font-weight: 700;
-
-  /* background-image: url(./images/bg-section-top-desktop-1.svg);
-  position: relative;
-  background-repeat: no-repeat; */
 }
 
 .ready-button {
@@ -256,6 +246,7 @@ footer {
 .footer-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 115px;
 }
 
 .footer-logo {
@@ -369,13 +360,26 @@ footer {
     text-align: center;
   }
 
-  .prop {
-  }
-
   .property {
     display: grid;
     grid-template-columns: 1fr;
     gap: 72px;
+  }
+
+  .curve1-top {
+    bottom: 14%;
+  }
+
+  .curve1-bottom {
+    top: 14%;
+  }
+
+  .curve2-top {
+    bottom: 6%;
+  }
+
+  .curve2-bottom {
+    top: 7%;
   }
 
   .ready {
@@ -408,6 +412,7 @@ footer {
       display: grid;
       grid-template-columns: 1fr;
       gap: 72px;
+      padding: 0px 30px;
     }
 
     .ready {
@@ -424,87 +429,88 @@ footer {
       flex-direction: column-reverse;
     }
 
-    /* #fmail {
-      max-width: 200px;
-      width: 100%; */
-  }
-  .footer-form {
-    align-items: flex-end;
-    flex-direction: column;
-  }
-
-  @media only screen and (max-width: 550px) {
-    .header-button {
-      font-size: 8px;
-    }
-
-    .info-title {
-      font-size: 22px;
-    }
-
-    .information {
-      padding: 40px 36px 45px 54px;
-    }
-
-    .info-button {
-      padding: 0px 36px;
-      font-size: 11px;
-    }
-
-    .stats {
+    .footer-form {
+      align-items: flex-end;
       flex-direction: column;
-      padding: 45px 98px 45px 98px;
-      gap: 86px;
-      align-items: flex-start;
     }
 
-    .stat-title {
-      font-size: 52px;
-    }
+    @media only screen and (max-width: 550px) {
+      .header-button {
+        font-size: 8px;
+      }
 
-    .stat-excerpt {
-      font-size: 11px;
-    }
+      .info-title {
+        font-size: 22px;
+      }
 
-    .properties {
-      padding: 45px 30px 45px 30px;
-    }
+      .information {
+        padding: 40px 36px 45px 54px;
+      }
 
-    .property-title {
-      font-size: 18px;
-    }
+      .info-button {
+        padding: 0px 36px;
+        font-size: 11px;
+      }
 
-    .property-excerpt {
-      font-size: 12px;
-    }
+      .stats {
+        padding: 45px 98px 45px 98px;
+        gap: 86px;
+        grid-template-columns: 1fr;
+      }
 
-    .ready {
-      padding: 130px 60px 130px 60px;
-    }
+      .stat-title {
+        font-size: 52px;
+      }
 
-    .ready-title {
-      font-size: 20px;
-    }
+      .stat-excerpt {
+        font-size: 11px;
+      }
 
-    .ready-button {
-      padding: 0px 38px;
-      font-size: 11px;
-    }
+      .properties {
+        padding: 45px 30px 45px 30px;
+      }
 
-    footer {
-      padding: 0px 24px;
-    }
+      .property-title {
+        font-size: 18px;
+      }
 
-    .footer-container {
-      padding: 0px;
-    }
+      .property-excerpt {
+        font-size: 12px;
+      }
 
-    .footer-title {
-      font-size: 18px;
-    }
+      .ready {
+        padding: 130px 60px 130px 60px;
+      }
 
-    .social-image {
-      width: 20px;
+      .ready-title {
+        font-size: 20px;
+      }
+
+      .ready-button {
+        padding: 0px 38px;
+        font-size: 11px;
+      }
+
+      footer {
+        padding: 0px 24px;
+      }
+
+      .footer-container {
+        padding: 0px;
+      }
+
+      .footer-title {
+        font-size: 18px;
+      }
+
+      .social-image {
+        width: 20px;
+      }
+
+      .footer-two-excerpt {
+        margin: 0px;
+        padding: 30px 0px;
+      }
     }
   }
 }
